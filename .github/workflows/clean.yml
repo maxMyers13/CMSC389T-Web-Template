@@ -20,6 +20,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd ../pub
+            cd /Users/maxmyers/cmsc389T-fall22/Projects/P5/CMSC389T-Web-Template/CMSC389T-Web-Template
             unalias rm
             rm -rf maxMyers13@.github.io
