@@ -17,4 +17,5 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             ls -a
+            cd cmsc389T-fall22/Projects/P5
             git pull
