@@ -1,0 +1,22 @@
+name: deployment_workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deplou:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: testing deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd ../pub
+            git pull
