@@ -21,4 +21,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            git clone git@github.com:maxMyers13/maxMyers13.github.io.git
+            git clone git@github.com:cmsc389T-fall22/cmsc389T-fall22.git
