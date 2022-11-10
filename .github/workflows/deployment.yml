@@ -17,5 +17,5 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             ls
-            cd CMSC389T-Web-Template
+            cd Projects/P5/CMSC389T-Web-Template/CMSC389T-Web-Template/
             git pull
