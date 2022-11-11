@@ -20,5 +20,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
+            cd ../pub
             unalias rm
             rm -rf maxMyers13@.github.io
